@@ -117,10 +117,10 @@
         <span class=k>print</span><span class=p>(</span><span class=s1>&#39;北京&#39;</span><span class=p>)</span>
 
 <span class=k>class</span> <span class=nc>Japanese</span><span class=p>(</span><span class=n>Human</span><span class=p>):</span>
-    <span class=n>jap</span> <span class=o>=</span> <span class=s1>&#39;日本人&#39;</span>
+    <span class=n>jap</span> <span class=o>=</span> <span class=s1>&#39;曰笨人&#39;</span>
 
     <span class=k>def</span> <span class=nf>country</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;东京&#39;</span><span class=p>)</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;冻京&#39;</span><span class=p>)</span>
 <span class=n>Chinese类和Japanese类分别实现了父类Human的country方法</span><span class=err>。</span>
 </code></pre></td></tr></table></div></div><p>执行：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
@@ -140,13 +140,13 @@
 <span class=o>&gt;&gt;&gt;</span> <span class=n>a</span><span class=o>.</span><span class=n>country</span><span class=p>()</span>
 <span class=err>北京</span>
 <span class=o>&gt;&gt;&gt;</span> <span class=n>b</span><span class=o>.</span><span class=n>country</span><span class=p>()</span>
-<span class=err>东京</span>
+<span class=err>冻京</span>
 <span class=o>&gt;&gt;&gt;</span> <span class=n>a</span><span class=o>.</span><span class=n>kind</span><span class=p>()</span>
 <span class=err>人类</span><span class=o>...</span>
 <span class=o>&gt;&gt;&gt;</span> <span class=n>b</span><span class=o>.</span><span class=n>kind</span><span class=p>()</span>
 <span class=err>人类</span><span class=o>...</span>
 <span class=o>&gt;&gt;&gt;</span>
-</code></pre></td></tr></table></div></div><p>中国人和日本人都是人类，但是中国的首都是北京，日本的首都是东京。</p><h1 id=4多重继承>4、多重继承</h1><p>讲了这么多，现在进入正题，我们都知道世界上人类按照性别可以分为男和女。如果我们于上面的Chinese类和Japanese增加性别相关属性和方法，就可以通过多重继承实现。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</code></pre></td></tr></table></div></div><p>中国人和曰笨人都是人类，但是中国的首都是北京，曰笨的首都是冻京。</p><h1 id=4多重继承>4、多重继承</h1><p>讲了这么多，现在进入正题，我们都知道世界上人类按照性别可以分为男和女。如果我们于上面的Chinese类和Japanese增加性别相关属性和方法，就可以通过多重继承实现。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -200,10 +200,10 @@
         <span class=k>print</span><span class=p>(</span><span class=s1>&#39;北京&#39;</span><span class=p>)</span>
 
 <span class=k>class</span> <span class=nc>Japanses</span><span class=p>(</span><span class=n>Human</span><span class=p>,</span><span class=n>Sex</span><span class=p>):</span>
-    <span class=n>jap</span> <span class=o>=</span> <span class=s1>&#39;日本人&#39;</span>
+    <span class=n>jap</span> <span class=o>=</span> <span class=s1>&#39;曰笨人&#39;</span>
 
     <span class=k>def</span> <span class=nf>country</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;东京&#39;</span><span class=p>)</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;冻京&#39;</span><span class=p>)</span>
 </code></pre></td></tr></table></div></div><p>执行：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
@@ -308,16 +308,16 @@
         <span class=k>print</span><span class=p>(</span><span class=s1>&#39;中国女人&#39;</span><span class=p>)</span>
 
 <span class=k>class</span> <span class=nc>Japanses</span><span class=p>(</span><span class=n>Human</span><span class=p>,</span><span class=n>Sex</span><span class=p>):</span>
-    <span class=n>jap</span> <span class=o>=</span> <span class=s1>&#39;日本人&#39;</span>
+    <span class=n>jap</span> <span class=o>=</span> <span class=s1>&#39;曰笨人&#39;</span>
 
     <span class=k>def</span> <span class=nf>country</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;东京&#39;</span><span class=p>)</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;冻京&#39;</span><span class=p>)</span>
 
     <span class=k>def</span> <span class=nf>male</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;日本男人&#39;</span><span class=p>)</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;曰笨男人&#39;</span><span class=p>)</span>
 
     <span class=k>def</span> <span class=nf>female</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;日本女人&#39;</span><span class=p>)</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;曰笨女人&#39;</span><span class=p>)</span>
 </code></pre></td></tr></table></div></div><p>执行：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
@@ -352,15 +352,15 @@
 <span class=o>&gt;&gt;&gt;</span> <span class=n>a</span><span class=o>.</span><span class=n>country</span><span class=p>()</span>
 <span class=err>北京</span>
 <span class=o>&gt;&gt;&gt;</span> <span class=n>b</span><span class=o>.</span><span class=n>country</span><span class=p>()</span> 
-<span class=err>东京</span>
+<span class=err>冻京</span>
 <span class=o>&gt;&gt;&gt;</span> <span class=n>a</span><span class=o>.</span><span class=n>male</span><span class=p>()</span>
 <span class=err>中国男人</span>
 <span class=o>&gt;&gt;&gt;</span> <span class=n>b</span><span class=o>.</span><span class=n>male</span><span class=p>()</span> 
-<span class=err>日本男人</span>
+<span class=err>曰笨男人</span>
 <span class=o>&gt;&gt;&gt;</span> <span class=n>a</span><span class=o>.</span><span class=n>female</span><span class=p>()</span> 
 <span class=err>中国女人</span>
 <span class=o>&gt;&gt;&gt;</span> <span class=n>b</span><span class=o>.</span><span class=n>female</span><span class=p>()</span> 
-<span class=err>日本女人</span>
+<span class=err>曰笨女人</span>
 <span class=o>&gt;&gt;&gt;</span> <span class=n>a</span><span class=o>.</span><span class=n>summary</span>  
 <span class=s1>&#39;性别类&#39;</span>
 <span class=o>&gt;&gt;&gt;</span> <span class=n>b</span><span class=o>.</span><span class=n>summary</span> 
