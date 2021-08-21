@@ -107,10 +107,10 @@ class Chinese(Human):
         print('北京')
 
 class Japanese(Human):
-    jap = '曰笨人'
+    jap = '日本人'
 
     def country(self):
-        print('冻京')
+        print('东京')
 Chinese类和Japanese类分别实现了父类Human的country方法。
 ```
 
@@ -124,7 +124,7 @@ Chinese类和Japanese类分别实现了父类Human的country方法。
 >>> a.country()
 北京
 >>> b.country()
-冻京
+东京
 >>> a.kind()
 人类...
 >>> b.kind()
@@ -132,7 +132,7 @@ Chinese类和Japanese类分别实现了父类Human的country方法。
 >>>
 ```
 
-中国人和曰笨人都是人类，但是中国的首都是北京，曰笨的首都是冻京。
+中国人和日本人都是人类，但是中国的首都是北京，日本的首都是东京。
 
 
 
@@ -169,10 +169,10 @@ class Chinese(Human,Sex):
         print('北京')
 
 class Japanses(Human,Sex):
-    jap = '曰笨人'
+    jap = '日本人'
 
     def country(self):
-        print('冻京')
+        print('东京')
 ```
 
 执行：
@@ -234,16 +234,16 @@ class Chinese(Human,Sex):
         print('中国女人')
 
 class Japanses(Human,Sex):
-    jap = '曰笨人'
+    jap = '日本人'
 
     def country(self):
-        print('冻京')
+        print('东京')
 
     def male(self):
-        print('曰笨男人')
+        print('日本男人')
 
     def female(self):
-        print('曰笨女人')
+        print('日本女人')
 ```            
 
 执行：
@@ -259,15 +259,15 @@ class Japanses(Human,Sex):
 >>> a.country()
 北京
 >>> b.country() 
-冻京
+东京
 >>> a.male()
 中国男人
 >>> b.male() 
-曰笨男人
+日本男人
 >>> a.female() 
 中国女人
 >>> b.female() 
-曰笨女人
+日本女人
 >>> a.summary  
 '性别类'
 >>> b.summary 
