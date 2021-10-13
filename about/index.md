@@ -18,7 +18,7 @@
 
 
 {{< admonition type=success title="More" open=true >}}
-<center><h3 style="color:red">公众号：Python测试和开发</h3></center>
+<center><h3 style="color:red">公众号：Python研究所</h3></center>
 <center><h1 style="color:green">扫码关注</h1></center>
 
 <div align=center>
