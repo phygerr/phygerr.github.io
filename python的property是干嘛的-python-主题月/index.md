@@ -152,7 +152,6 @@ class Student(object):
 ```
 
 到此，@peoperty分享完毕，关于它的实现原理你可以查看源码进行研究。
-
-![](https://gitee.com/phygerr/picture/raw/master/2021-7-22/1626966742081-image.png "源码")
+图片
 
 
